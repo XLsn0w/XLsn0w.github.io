@@ -4,7 +4,10 @@ email: XLsn0w@outlook.com
 description: "XLsn0w Blog"
 baseurl: ""
 url: "https://xlsn0w.github.io"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
+title_description: "Apple Objective-C/Swift Developer
+                    { Learning Kotlin/Java/JavaScript }
+                    ( My Github-> https://github.com/XLsn0w)
+                    我的微信公众号-> Cydiapple"
 title_image: "https://github.com/XLsn0w/XLsn0w.github.io/blob/master/XLsn0w.png?raw=true"
 google_analytics: "UA-20365477-4"
 disqus_account: cartenoire
@@ -13,19 +16,19 @@ addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
-instagram_username: 
+twitter_username: XL_sn0w
+github_username:  XLsn0w
+instagram_username: xlsn0w
 reddit_username: 
-linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
-google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
+linkedin_link:
+google_plus_link: https://plus.google.com/118148947586555888325
+stackoverflow_link: https://stackoverflow.com/users/6675871/xlsn0w
 xing_link:
 facebook_link:
 
 # Footer
-footer_left: "我的简书 <i class=\"fa fa-heart\"></i> by <a href=\"http://www.jianshu.com/u/eacc1a5d2fda\">XLsn0w</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/XLsn0w\">My Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "XLsn0w <i class=\"fa fa-heart\"></i> ---> <a href=\"http://www.jianshu.com/u/eacc1a5d2fda\">简书</a>"
+footer_right: "XLsn0w<a href=\"https://github.com/XLsn0w\">My Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
