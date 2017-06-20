@@ -1,15 +1,14 @@
-<header class="site-header">
+<nav id="my-menu">
+  <div>
+    <p>{{ site.title }}</p>
 
-  <div class="wrapper">
+    <ul class="pages">
+      <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="{{ site.baseurl }}/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
+      <li><a href="{{ site.baseurl }}/search/"><i class="fa fa-search"></i> Search</a></li>
+    </ul>
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    
+    {% include social_links.html %}
   </div>
-
-  <div class="header-badge">
-    <a href="{{ site.baseurl }}/">
-        <img src="/jekyll-wing-template/assets/headshot.jpg" />
-    </a>
-  </div>
-    
-</header>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>

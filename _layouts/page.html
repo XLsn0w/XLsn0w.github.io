@@ -1,14 +1,12 @@
 ---
 layout: default
 ---
-<article class="post card">
-<div class="card-content">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+<div class="container-fluid index">
+  <div class="row index all-posts">
+    <h2 class="header" itemprop="headline"> {{ page.title }} </h2>
+    <div class="col-md-12 content-panel articles">
+       {{ content }}
     </div>
-</article>
+  </div>
+</div>
