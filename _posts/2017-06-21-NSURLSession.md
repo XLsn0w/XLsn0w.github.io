@@ -1,22 +1,27 @@
+---
+layout:     post
+title:      NSURLSession
+date:       2017-06-21 
+author:     XLsn0w
+summary:    XLsn0w's Blog
+categories: jekyll
+thumbnail:  heart
+
 #NSURLSession学习
 ##简介
   iOS7(OS X v10.9)出现了NSURLSession。目的为了替换 NSURLConnection.对于后台APP，也提供后台下载功能。
 
 ##之前的NSURLConnection 
    NSURLConnection工作原理，如下图
-  ![NSURLConnection](NSURLConnection.png)
   1. NSURLConnection 作为 Core Foundation / CFNetwork 框架的 API 之上的一个抽象,指代的 Foundation 框架的 URL 加载系统中一系列有关联的组件：***NSURLRequest、NSURLResponse、NSURLProtocol、 NSURLCache、 NSHTTPCookieStorage、NSURLCredentialStorage 以及同名类 NSURLConnection***。
   2.NSURLRequest 被传递给 NSURLConnection。被委托对象（遵守以前的非正式协议 <NSURLConnectionDelegate> 和 <NSURLConnectionDataDelegate>）异步地返回一个 NSURLResponse 以及包含服务器返回信息的 NSData。
   3.在一个请求被发送到服务器之前，系统会先查询共享的缓存信息，然后根据策略（policy）以及可用性（availability）的不同，一个已经被缓存的响应可能会被立即返回。如果没有缓存的响应可用，则这个请求将根据我们指定的策略来缓存它的响应以便将来的请求可以使用。
   4.在把请求发送给服务器的过程中，服务器可能会发出鉴权查询（authentication challenge），这可以由共享的 cookie 或机密存储（credential storage）来自动响应，或者由被委托对象来响应。发送中的请求也可以被注册的 NSURLProtocol 对象所拦截，以便在必要的时候无缝地改变其加载行为。
 ##NSURLSession
-   NSURLSession工作原理，如下图
-   ![NSURLConnection](NSURLSession.png)
   1. NSURLSession包含之前NSURLSession关联的组件***NSURLRequest 与 NSURLCache***，把 NSURLConnection 替换成了 NSURLSession、NSURLSessionConfiguration 以及 NSURLSessionTask 的 3 个子类：NSURLSessionDataTask，NSURLSessionUploadTask，NSURLSessionDownloadTask。
   2.从NSURLConnection原理图和NSURLSession原理图分析，NSURLSession最大改进可以配置每个 session 的缓存，协议，cookie，以及证书策略（credential policy），甚至跨程序共享这些信息。这将允许程序和网络基础框架之间相互独立，不会发生干扰。每个 NSURLSession 对象都由一个 NSURLSessionConfiguration 对象来进行初始化，后者指定了刚才提到的那些策略以及一些用来增强移动设备上性能的新选项。
 
 ##补充网络辅助类
- ![NSURLConnection](URL_hierarchy.png)
 
 ***
 ###认证和证书
@@ -81,15 +86,10 @@ URL加载系统默认支持http, https, file, ftp, data协议。另外，URL加�
 
 >这一节主要讲解NSURLSession使用
 
-#NSURLSession结构图
-  ![NSURLSessiom](NSURLSession.png)
  
 #NSURLSessionConfiguration
-  NSURLSessionConfiguration对象用于初始化NSURLSession对象。请求级别上与NSMutableURLRequest相关可供选择方案。它对于会话如何产生请求，做了相当多的控制与灵活度。从网络访问性能，到cookie，安全性，缓存策略，自定义协议，启动事件设置，以及用于移动设备优化的几个新属性,如下图
+  NSURLSessionConfiguration对象用于初始化NSURLSession对象。请求级别上与NSMutableURLRequest相关可供选择方案。它对于会话如何产生请求，做了相当多的控制与灵活度。从网络访问性能，到cookie，安全性，缓存策略，自定义协议，启动事件设置，以及用于移动设备优化的几个新属性
  
- ![NSURLSessionConfiguration](NSConfiguration-1.png)
- 
-  ![NSURLSessionConfiguration](NSConfiguration-2.png)
   
 ###Properties
 
@@ -116,37 +116,28 @@ URL加载系统默认支持http, https, file, ftp, data协议。另外，URL加�
 ######Custom Protocols
 　　***protocolClasses***是注册NSURLProtocol类的特定会话数组。
 　　
-###Constructors
-  ![Configuration-Contruct-](Configuration-Contruct-.png)
 一般模式（default）：工作模式类似于原来的NSURLConnection，可以使用缓存的Cache，Cookie，鉴权。<br/>
 及时模式（ephemeral）：不使用缓存的Cache，Cookie，鉴权。<br/>
 后台模式（background）：在后台完成上传下载，创建Configuration对象的时候需要给一个NSString的ID用于追踪完成工作的Session是哪一个。<br/>
 
 # NSURLSession Tasks and Delegates
-![NSURLSession-Tasks](NSURLSession-Tasks.png)
+
 ###NSURLSessionDataTask
    Note:不支持后台模式
 #####创建Data task(使用系统提供的代理)
- ![dataTask-Create](dataTask-Create.png)
- ![dataTask-systemDelegate](dataTask-systemDelegate.png)
+
 #####创建Data task(自定义代理代理)
- ![dataTask-customDelegate](dataTask-customDelegate.png)
+
 <hr/>
 ###NSURLSessionDownloadTask
  Note:直接写入临时文件内，支持后台下载
  #####创建Data task(使用系统提供的代理)
- ![downloadTask-create](downloadTask-create.png)
- ![downloadTask-sysDelegate](downloadTask-sysDelegate.png)
 #####创建Data task(自定义代理代理)
- ![downloadTask-customDelegate](downloadTask-customDelegate.png)
   <hr/>
 ###NSURLSessionUploadTask
  Note:支持后台下载
  #####创建Data task(使用系统提供的代理)
- ![upload-create](upload-create.png)
- ![upload-custom](upload-custom.png)
 #####创建Data task(自定义代理代理)
- ![upload-sys](upload-sys.png)
  
  <hr/>
 ##HTTP使用

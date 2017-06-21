@@ -6,12 +6,6 @@ author:     XLsn0w
 summary:    XLsn0w's Blog
 categories: jekyll
 thumbnail:  heart
-tags:
- - welcome
- - to
- - carte
- - noire
----
 
 #Dispatch Queue
 

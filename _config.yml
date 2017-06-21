@@ -2,7 +2,7 @@
 title: "XLsn0w"
 email: XLsn0w@outlook.com
 description: "XLsn0w Blog"
-baseurl: ""
+baseurl: "https://github.com/XLsn0w/XLsn0w.github.io/blob/master/XLsn0w.png?raw=true"
 url: "https://xlsn0w.github.io"
 title_description: "Apple Objective-C/Swift Developer
                     A new Web Engineer
@@ -11,10 +11,10 @@ title_description: "Apple Objective-C/Swift Developer
                     我的微信公众号-> Cydiapple"
 title_image: "https://github.com/XLsn0w/XLsn0w.github.io/blob/master/XLsn0w.png?raw=true"
 google_analytics: "UA-20365477-4"
-disqus_account: cartenoire
+disqus_account:
 github_repository: https://github.com/XLsn0w/XLsn0w.github.io
-addthis_id: ra-513c6fa83da6ec67
-post_limit: 5
+addthis_id:
+post_limit:
 
 # Social usernames/URLs
 twitter_username: XL_sn0w
