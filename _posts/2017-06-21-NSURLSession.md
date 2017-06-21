@@ -1,13 +1,18 @@
 ---
 layout:     post
 title:      NSURLSession
-date:       2017-06-21 
+date:       2017-06-21 09:31:19
 author:     XLsn0w
 summary:    XLsn0w's Blog
 categories: jekyll
 thumbnail:  heart
+tags:
+ - XLsn0w
+ - Blog
+---
 
 #NSURLSession学习
+
 ##简介
   iOS7(OS X v10.9)出现了NSURLSession。目的为了替换 NSURLConnection.对于后台APP，也提供后台下载功能。
 
