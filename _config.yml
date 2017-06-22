@@ -1,10 +1,10 @@
 # Site settings
 title: "XLsn0w"
 email: XLsn0w@outlook.com
-description: "XLsn0w Blog"
+description: "XLsn0wBlog"
 baseurl: ""
 url: "https://xlsn0w.github.io"
-title_description: "Apple Objective-C/Swift DeveloperSearch My WeChat Official Account-> Cydiapple"
+title_description: "Apple Objective-C/Swift Developer  Search For My WeChat Official Account: Cydiapple"
 title_image: "https://github.com/XLsn0w/XLsn0w.github.io/blob/master/XLsn0w.png?raw=true"
 google_analytics: "UA-20365477-4"
 disqus_account:
@@ -24,7 +24,7 @@ xing_link:
 facebook_link:
 
 # Footer
-footer_left: "求关注 <i class=\"fa fa-heart\"></i> XLsn0w's <a href=\"http://www.jianshu.com/u/eacc1a5d2fda\">简书</a>"
+footer_left: "关注 <i class=\"fa fa-heart\"></i> XLsn0w's <a href=\"http://www.jianshu.com/u/eacc1a5d2fda\">简书</a>"
 footer_right: "Follow <a href=\"https://github.com/XLsn0w\">XLsn0w's Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
