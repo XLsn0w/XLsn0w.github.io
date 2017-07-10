@@ -6,6 +6,7 @@ author:     XLsn0w
 summary:    XLsn0w's Blog
 categories: jekyll
 thumbnail:  heart
+---
 
 ###Dispatch Queue -> GCD Objects
 &nbsp;&nbsp;当你使用Objective-C编译器构建你的App，所有的dispatch object是Obejctive-C对象。
