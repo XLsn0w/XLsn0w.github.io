@@ -24,7 +24,7 @@ xing_link:
 facebook_link:
 
 # Footer
-footer_left: "关注 <i class=\"fa fa-heart\"></i> XLsn0w's <a href=\"http://www.jianshu.com/u/eacc1a5d2fda\">简书</a>"
+footer_left: "关注 <i class=\"fa fa-heart\"></i> <a href=\"http://www.jianshu.com/u/eacc1a5d2fda\">XLsn0w's 简书</a>"
 footer_right: "Follow <a href=\"https://github.com/XLsn0w\">XLsn0w's Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings

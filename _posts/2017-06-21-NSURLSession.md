@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      NSURLSession
-date:       2017-06-21 09:31:19
+title:      Welcome to XLsn0w's Blog
+date:       2017-06-21 23:31:19
 author:     XLsn0w
 summary:    XLsn0w's Blog
 categories: jekyll
@@ -11,12 +11,10 @@ tags:
  - Blog
 ---
 
-#NSURLSession学习
-
 ##简介
   iOS7(OS X v10.9)出现了NSURLSession。目的为了替换 NSURLConnection.对于后台APP，也提供后台下载功能。
 
-##之前的NSURLConnection 
+##之前的NSURLConnection
    NSURLConnection工作原理，如下图
   1. NSURLConnection 作为 Core Foundation / CFNetwork 框架的 API 之上的一个抽象,指代的 Foundation 框架的 URL 加载系统中一系列有关联的组件：***NSURLRequest、NSURLResponse、NSURLProtocol、 NSURLCache、 NSHTTPCookieStorage、NSURLCredentialStorage 以及同名类 NSURLConnection***。
   2.NSURLRequest 被传递给 NSURLConnection。被委托对象（遵守以前的非正式协议 <NSURLConnectionDelegate> 和 <NSURLConnectionDataDelegate>）异步地返回一个 NSURLResponse 以及包含服务器返回信息的 NSData。
@@ -42,26 +40,26 @@ NSURLCredientialStorage：一般是一个共享实例，用于管理证书存储
 ***
 NSURLAuthenticationChallenge：封装了认证一个请求的的NSURLProtocol实现所需要的信息：一个建议的证书、保护空间、错误信息或者协议用于确定所需要认证的响应、以及认证尝试次数等。初始对象（即请求发送者）必须实现NSURLAuthenticationChallengeSender协议。NSURLAuthenticationChallenge实例被用于NSURLProtocol的子类来告诉URL加载系统需要认证。他们同样为NSURLConnection和NSURLDownload的代理方法提供了便利的自定义认证处理。
   收到认证要求时，NSURLConnection 的委托对象会收到相应的消息并得到一个 NSURLAuthenticationChallenge 实例。该实例的发送方遵守 NSURLAuthenticationChallengeSender 协议。为了继续收到真实的数据，需要向该发送方向发回一个 NSURLCredential 实例。
-  		     
+
              - (void)connection:(NSURLConnection *)connection                             didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
 			{
     // 之前已经失败过
     if ([challenge previousFailureCount] > 0) {
-       
+
         // 为什么失败
         NSError *failure = [challenge error];
         NSLog(@"Can't authenticate:%@", [failure localizedDescription]);
-        
+
         // 放弃
         [[challenge sender] cancelAuthenticationChallenge:challenge];
         return;
     }
-    
+
     // 创建 NSURLCredential 对象
     NSURLCredential *newCred = [NSURLCredentialcredentialWithUser:@"sid"
                                                           password:@"MomIsCool"
                                                        persistence:NSURLCredentialPersistenceNone];
-    
+
     // 为 challenge 的发送方提供 credential
     [[challenge sender] useCredential:newCred
            forAuthenticationChallenge:challenge];
@@ -80,8 +78,8 @@ iOS提供了NSHTTPCookieStorage类来管理一个NSHTTPCookie对象的集合。
 ###协议支持
 URL加载系统默认支持http, https, file, ftp, data协议。另外，URL加载系统也允许我们注册自己的类来支持额外的系统层级的网络协议。我们也可以添加指定协议的属性到URL请求和URL响应对象
 
-  
-  
+
+
 ##参考内容
   1.<https://www.objc.io/issues/5-ios7/from-nsurlconnection-to-nsurlsession/><br/>
   2.<http://hayageek.com/ios-nsurlsession-example/#session-types><br/>
@@ -91,11 +89,11 @@ URL加载系统默认支持http, https, file, ftp, data协议。另外，URL加�
 
 >这一节主要讲解NSURLSession使用
 
- 
+
 #NSURLSessionConfiguration
   NSURLSessionConfiguration对象用于初始化NSURLSession对象。请求级别上与NSMutableURLRequest相关可供选择方案。它对于会话如何产生请求，做了相当多的控制与灵活度。从网络访问性能，到cookie，安全性，缓存策略，自定义协议，启动事件设置，以及用于移动设备优化的几个新属性
- 
-  
+
+
 ###Properties
 
 ######Caching Policies
@@ -143,7 +141,7 @@ URL加载系统默认支持http, https, file, ftp, data协议。另外，URL加�
  Note:支持后台下载
  #####创建Data task(使用系统提供的代理)
 #####创建Data task(自定义代理代理)
- 
+
  <hr/>
 ##HTTP使用
 ####步骤
@@ -152,4 +150,7 @@ URL加载系统默认支持http, https, file, ftp, data协议。另外，URL加�
 3.创建NSURLSession Task（data,download,upload）
 4.resume
 
-   
+
+
+
+[1]: https://xlsn0w.github.io
