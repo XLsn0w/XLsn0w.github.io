@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2646ffc-5748-477e-9d05-68870d2d37f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-06-20-XLsn0w.md" afterPath="$PROJECT_DIR$/_posts/2017-06-20-XLsn0w.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-06-21-NSURLSession.md" afterPath="$PROJECT_DIR$/_posts/2017-06-21-NSURLSession.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-06-22-DispatchQueue.md" afterPath="$PROJECT_DIR$/_posts/2017-06-22-DispatchQueue.md" />
     </list>
     <ignored path="XLsn0w.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-06-20-XLsn0w.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-06-20-XLsn0w.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-06-20-XLsn0w.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.048309177">
+            <state vertical-scroll-proportion="-1.1111112">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
@@ -57,18 +57,18 @@
       <file leaf-file-name="2017-06-22-DispatchQueue.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-06-22-DispatchQueue.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.4444447">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-06-21-NSURLSession.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2017-06-21-NSURLSession.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2017-06-21-NSURLSession.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1111112">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.19323671">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,8 +137,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2017-06-21-DispatchQueue.md" />
-        <option value="$PROJECT_DIR$/_posts/2017-06-21-NSURLSession.md" />
         <option value="$PROJECT_DIR$/_posts/2017-06-20-XLsn0w.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-06-21-NSURLSession.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-06-22-DispatchQueue.md" />
       </list>
     </option>
   </component>
@@ -148,7 +149,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
+    <option name="x" value="59" />
     <option name="y" value="23" />
     <option name="width" value="1308" />
     <option name="height" value="745" />
@@ -178,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -214,6 +214,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,7 +283,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="23" width="1308" height="745" extended-state="6" />
+    <frame x="59" y="23" width="1308" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2706422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -629,26 +630,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-06-21-NSURLSession.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-06-20-XLsn0w.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1111112">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-06-22-DispatchQueue.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.4444447">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-06-20-XLsn0w.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-06-21-NSURLSession.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048309177">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.19323671">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

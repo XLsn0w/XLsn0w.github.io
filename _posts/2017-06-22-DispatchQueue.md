@@ -7,9 +7,7 @@ summary:    XLsn0w's Blog
 categories: jekyll
 thumbnail:  heart
 
-#Dispatch Queue
-
-###GCD Objects
+###Dispatch Queue -> GCD Objects
 &nbsp;&nbsp;当你使用Objective-C编译器构建你的App，所有的dispatch object是Obejctive-C对象。
 引用Queue基本对象为***dispatch_queue_t***;在MRC下，使用***dispatch_retain** 和 ***dispatch_release***函数来retain 和release你的dispatch objects,而不是使用Core Foundatons函数。如果你想在ARC下，使用retain/release语义，需要添加 ***DOS_OBJECT_USE_OBJC=0***编译标记位，[参考位置](http://stackoverflow.com/questions/8618632/does-arc-support-dispatch-queues).
 
