@@ -12,4 +12,4 @@ Apple  Developer iPhone  Hacker
 
 我的简书-> http://www.jianshu.com/u/eacc1a5d2fda
 
-
+![tease](https://github.com/XLsn0w/XLsn0w.github.io/blob/master/favicons/tease.gif?raw=true)
