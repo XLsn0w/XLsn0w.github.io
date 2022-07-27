@@ -1,10 +1,10 @@
 # Site settings
 title: "XLsn0w"
-email: XLsn0w@outlook.com
+email: xlsn00w@gmail.com
 description: "XLsn0wBlog"
 baseurl: ""
 url: "https://xlsn0w.github.io"
-title_description: "Apple Objective-C/Swift Developer  Search For My WeChat Official Account: Cydiapple"
+title_description: "iPhone  Hacker"
 title_image: "https://github.com/XLsn0w/XLsn0w.github.io/blob/master/XLsn0w.png?raw=true"
 google_analytics: "UA-20365477-4"
 disqus_account:
@@ -13,8 +13,8 @@ addthis_id:
 post_limit:
 
 # Social usernames/URLs
-twitter_username: XL_sn0w
 github_username:  XLsn0w
+twitter_username: XLsn0w
 instagram_username: xlsn0w
 reddit_username: 
 linkedin_link:
